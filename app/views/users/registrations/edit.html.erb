@@ -8,12 +8,15 @@
     <%= f.text_field :name, autofocus: true %>
   </div>
 
-  <div>
+  <!-- <div>
     <%= f.check_box :is_female, {}, true %> <%= f.label :is_female, "Female" %>
   </div>
   <div>
     <%= f.check_box :is_female, {}, false %> <%= f.label :is_female, "Male" %>
-  </div>
+  </div> -->
+
+  <%= f.radio_button :is_female, '1' %> <%= f.label :is_female, "Female" %>
+  <%= f.radio_button :is_female, '0' %> <%= f.label :is_female, "Male" %>
 
   <div>
     <%= f.label :date_of_birth %><br />
